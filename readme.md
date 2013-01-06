@@ -1,24 +1,24 @@
 # Kata Bowling.
 
 The goal of this kata is to calculate the score of a Bowling game. The script will read a string
-containning every run of a player and will output the final score.
+containing every run of a player and will output the final score.
 
 We will consider the following:
  * the format of the string passed to the script is valid
  * we only want the final score
 
-Here is the list of rules for the calculation of the score of Bowling ten-pin game:
+Here is the list of rules for the calculation of the score of a Bowling ten-pin game:
 
  * A game is divided in 10 frames
  * In a frame the player has two balls to knock down the pins
  * The score after each round is the number of koncked down pins
- * If, after the first ball of a frame, every pins are knocked down it is a strike and the score is 10 points
-   plus the score of the newt two balls
- * If, after the second ball of a frame, every pins are knocked down it is a spare and the score is 10 points
+ * If, after the first ball of a frame, every pin are knocked down it is a strike and the score is 10 points
+   plus the score of the next two balls
+ * If, after the second ball of a frame, every pin are knocked down it is a spare and the score is 10 points
  * On the last frame, if the player do a strike or a spare, then he can play two or one more ball. The score of each bonus
    balls are added to the score of the latest frame.
 
-Examples
+Examples:
 
 Input:  "XXXXXXXXXXXX" (12 balls: 12 strikes)
 Output: 300
