@@ -79,10 +79,10 @@ class Ball
         if ($this->isStrike()) {
             $this->isFirst = true;
         } else {
-            $this->isFirst  = !$this->getPrevious()->isFirst();
+            $this->isFirst = !$this->getPrevious()->isFirst();
         }
 
-        $this->turn     = $this->getPrevious()->getTurn() + (int) $this->isFirst();
+        $this->turn = $this->getPrevious()->getTurn() + (int) $this->isFirst();
 
         $previous->setNext($this);
     }
@@ -191,9 +191,9 @@ class Ball
         $score = $this->getScore();
 
         /**
-         * It it is a strike it adds the score of the two next balls.
+         * If it is a strike it adds the score of the two next balls.
          * If it is the last turn (the 10th), the player has two more
-         * balls and the point are added to the 10th ball.
+         * balls and the points are added to the 10th ball.
          */
         if ($this->isStrike()) {
             if ($this->turn <= self::MAX_TURN

@@ -44,8 +44,7 @@ class Bowling
     {
         $values = str_split($result, 1);
 
-        foreach ($values as $key => $value)
-        {
+        foreach ($values as $key => $value) {
             $ball = new Ball($value);
 
             if ($key > 0) {
